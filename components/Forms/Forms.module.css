@@ -9,10 +9,14 @@
 .divRadio {
     display: flex;
     justify-content: left;
-    gap: 10px;
     width: 100%;
     font-family: 'HelveticaLight', sans-serif;
     color: #888888;
+    gap: 4px;
+}
+
+.space{
+    width: 40px;
 }
 
 .button {
@@ -41,4 +45,13 @@
     text-align: left;
     color: #888888;
     font-family: 'HelveticaLight', sans-serif;
+}
+
+.inputForm {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    width: 340px;
+    height: 30px;
+    text-align: left;
 }

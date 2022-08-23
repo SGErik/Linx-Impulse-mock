@@ -9,18 +9,19 @@ const Forms = () => {
         <form className={R.organizar}>
             <div className={R.label}>
             <Label texto="Seu nome:" />
-            <Input type="text" placeholder="Nome" />
+            <Input type="text" className={R.inputForm} />
             </div>
             <div className={R.label}>
             <Label texto="E-mail:" />
-            <Input type="email" placeholder="Email" />
+            <Input type="email" className={R.inputForm} />
             </div>
             <div className={R.label}>
             <Label texto="CPF:" />
-            <Input type="text" placeholder="CPF:" />
+            <Input type="text" className={R.inputForm}/>
             </div>
             <div className={R.divRadio}>
                 <input type="radio" name="Masculino" id="Masculino" />Masculino
+                <div className={R.space}/>
                 <input type="radio" name="Feminino" id="Feminino" />Feminino
             </div>
             <Button className={R.button} texto="Enviar" />

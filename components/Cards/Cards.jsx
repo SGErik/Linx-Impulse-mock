@@ -4,15 +4,15 @@ import S from './Cards.module.css'
 
 const Cards = ({ image, name, desc, de, por, vezes, ou }) => {
     return (
-        <article>
-            <picture className={S.cards}>
-                <img src={image} className={S.imgs}/>
+        <article className={S.cards}>
+            <picture className={S.imgs}>
+                <img src={image} alt='Produto'/>
             </picture>
             <h3 className={S.h3}>{name}</h3>
             <p className={S.desc}>{desc}</p>
-            <h4 className={S.h4}>De:{de},00</h4>
-            <h5 className={S.h5}>Por:{por},00</h5>
-            <p className={S.vezes}>ou {vezes}x de:{ou}</p>
+            <h4 className={S.h4}>De:R${de},00</h4>
+            <h5 className={S.h5}>Por:R${por},00</h5>
+            <p className={S.vezes}>ou {vezes}x de:R${ou}</p>
             <Button className={S.button1} texto="Comprar" />
         </article>
     )

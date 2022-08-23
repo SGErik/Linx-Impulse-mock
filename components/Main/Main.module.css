@@ -1,5 +1,6 @@
 .textOrganization {
     display: flex;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: left;
@@ -48,14 +49,79 @@ hr {
 
 }
 
-h3 {
+
+.pageDivider1 {
+    display: flex;
+    width: 100%;
+    gap: 9px;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.firstH3 {
     font-family: "HelveticaBold", sans-serif;
     color: #888888;
 }
 
+.secondH3 {
+    font-family: "HelveticaBold", sans-serif;
+    color: #888888;
+    font-size: 18px;
+}
+
+
 .divCards {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6.199vh;
     width: 930px;
     flex-wrap: wrap;
 }
+
+.button{
+    font-family: 'HelveticaLight', sans-serif;
+    background: #FFF;
+    font-size: 16px;
+    height: 39px;
+    width: 260px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    margin: 50px 0 100px 0;
+    color: #888888;
+    cursor: pointer;
+}
+
+
+.button:hover{
+    background: black;
+    color: white;
+}
+
+.formBot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: #888888;
+    font-family: 'HelveticaLight', sans-serif;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 34px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #888888;
+    font-family: 'HelveticaLight', sans-serif;
+}
+
+
+

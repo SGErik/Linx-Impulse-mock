@@ -1,11 +1,11 @@
 import React from "react";
-// import R from './Button.module.css'
+import R from './Button.module.css'
 
 
-export const Button = ({texto, className})=>{
+export const Button = ({texto, className, onClick})=>{
 
     return (
-        <button className={className}>{texto}</button>
+        <button className={className} onClick={onClick}>{texto}</button>
         
     )
 }

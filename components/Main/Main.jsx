@@ -1,6 +1,11 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { useState } from 'react'
+import { Button } from '../Button/Button'
+import Cards from '../Cards/Cards'
 import Forms from '../Forms/Forms'
+import Input from '../Input/Input'
+import Label from '../Label/Label'
 import Pagedivider from '../Pagedivider/Pagedivider'
 import T from './Main.module.css'
 
@@ -13,21 +18,21 @@ const Main = () => {
     const json = await requisition.json();
     setInfo([...info, ...json.products]);
     console.log(info)
-}
+  }
 
-const addPage = ()=>{
-  setPage(page + 1);
-}
+  const addPage = () => {
+    setPage(page + 1);
+  }
 
-useEffect(()=>{
-  handleRequisição()
-}, [page])
+  useEffect(() => {
+    handleRequisição()
+  }, [page])
 
-  
-  
-  
-  
-  
+
+
+
+
+
   return (
     <div className={T.direction}>
       <div className={T.TextForm}>
@@ -42,12 +47,38 @@ useEffect(()=>{
       </div>
       <div className={T.pageDivider}>
         <Pagedivider />
-        <h3>Sua seleção especial</h3>
+        <h3 className={T.firstH3}>Sua seleção especial</h3>
         <Pagedivider />
       </div>
-    <div className={T.divCards}>
+      <div className={T.divCards}>
+        {info.length > 0 && info.map((item, index) => {
+          return (
+            <Cards key={index} image={item.image} name={item.name} desc={item.description} de={item.oldprice} por={item.price} vezes={item.installments.count} ou={item.installments.value} />
+          );
+        })};
+        <Button texto='Adquira ainda mais produtos aqui' className={T.button} onClick={addPage} />
+        <div className={T.pageDivider1}>
+          <Pagedivider />
+          <h3 className={T.secondH3}>Compartilhe a Novidade</h3>
+          <Pagedivider />
+          
+        </div>
+        <div className={T.formBot}>
+            <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+            <div className={T.inputs}>
+              <div className={T.label}>
+              <Label texto='Nome do seu amigo:' className={T.label}/>
+              <Input type='text'/>
+              </div>
+              <div className={T.label}>
+              <Label texto='E-mail:' className={T.label} />
+              <Input type='email' />
+              </div>
+              </div>
+              <Button texto='Enviar agora' className={T.button} />
+          </div>
 
-    </div>
+      </div>
 
     </div>
   )
