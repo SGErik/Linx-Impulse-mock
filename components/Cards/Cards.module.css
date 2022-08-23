@@ -1,0 +1,43 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+    width: 200px;
+}
+
+.imgs {
+    border: 1px solid #707070;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3{
+    font-size: 14px;
+}
+
+.desc, .h4, .vezes{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.h5{    
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.button1{
+    font-size: 16px;
+    background: #FFF;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    color: #888888;
+    height: 30px;
+    width: 200px;
+}

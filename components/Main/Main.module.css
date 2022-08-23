@@ -1,0 +1,61 @@
+.textOrganization {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 520px;
+}
+
+.direction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 70px;
+    width: 100%;
+}
+
+.paragrafo1 {
+    font-family: 'HelveticaLight', sans-serif;
+    font-size: 20px;
+    color: #888888;
+    text-align: left;
+}
+
+.paragrafo2 {
+    font-family: 'HelveticaLight', sans-serif;
+    text-align: left;
+    margin-top: 15px;
+    color: #888888;
+}
+
+.TextForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+}
+
+hr {
+    margin-top: 10px;
+    width: 360px;
+    border-top: 2px solid #707070;
+}
+
+.pageDivider {
+    display: flex;
+    gap: 10px;
+
+}
+
+h3 {
+    font-family: "HelveticaBold", sans-serif;
+    color: #888888;
+}
+
+.divCards {
+    display: flex;
+    justify-content: space-between;
+    width: 930px;
+    flex-wrap: wrap;
+}
